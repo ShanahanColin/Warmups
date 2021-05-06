@@ -1,7 +1,9 @@
 ﻿using System;
 namespace Warmup.Mosh
 {
-    public enum EmptyEnumeration
+    public enum ImageOrientation
     {
+        Landscape,
+        Portrait
     }
 }
