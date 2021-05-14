@@ -9,7 +9,7 @@ namespace Warmup.Mosh
 
             //First Test
 
-            Console.WriteLine("Enter a nuber between 1 and 10");
+            Console.WriteLine("Enter a number between 1 and 10");
             int inputNum = Convert.ToInt32(Console.ReadLine());
 
             if (inputNum > 0 && inputNum < 11)
@@ -25,13 +25,19 @@ namespace Warmup.Mosh
 
             //Second Test
 
-            Console.WriteLine("Enter two numbers");
+            Console.WriteLine("Enter two numbers. First number: ");
             int num1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Second number: ");
+            
             int num2 = Convert.ToInt32(Console.ReadLine());
 
             if (num1 > num2)
             {
                 Console.WriteLine("First num is larger: " + num1);
+            }
+            else if (num1 == num2)
+            {
+                Console.WriteLine("Numbers are equal");
             }
             else
             {
@@ -53,6 +59,8 @@ namespace Warmup.Mosh
         Console.WriteLine("--------------");
 
             //Fourth Test
+            Console.WriteLine("You must input a speed limit as well as a speed for a car to determine" +
+                " if the car is obeying the law");
             Console.WriteLine("What is the speed limit?");
             int speedLimit = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("What is the speed of the vehicle?");
